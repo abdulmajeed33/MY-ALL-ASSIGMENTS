@@ -1,0 +1,177 @@
+
+.home{
+    cursor: pointer;
+    background-color: #FBAB7E;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid#000000;
+}
+.home:hover{
+    background-color: #F0E68C;
+    transition: 0.9s;
+}
+.about{
+    cursor: pointer;
+    background-color: #FBAB7E;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid#000000;
+}
+
+
+.about:hover{
+    background-color: #F0E68C;
+    transition: 0.9s;
+}
+.contact{
+    cursor: pointer;
+    background-color: #FBAB7E;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid#000000;
+}
+
+
+.contact:hover{
+    background-color: #F0E68C;
+    transition: 0.9s;
+}
+.h1-m{
+    background-color: #FBAB7E;
+background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 40px;
+border: 2px solid#000000;
+}
+h5{
+    text-align: center;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+.paragrph{
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    text-align: center;
+}
+small{
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+}
+.card-body-m:hover{
+   background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+}
+.card-body-m{
+    cursor: pointer;
+}
+img{
+    cursor: pointer;
+}
+.card-m{
+    border: 5px solid#FBAB7E;
+    background-color: #190A05;
+}
+.card-footer-m{
+    border-top: 2px solid#FBAB7E;
+}
+.h2-m{
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.h3-m{
+    background: #403B4A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #E7E9BB, #403B4A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #E7E9BB, #403B4A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.h4-m{
+    background-image: radial-gradient( circle 905.6px at 4.9% 7.9%,  rgba(218,0,0,1) 14.1%, rgba(168,2,144,1) 65%, rgba(102,2,110,1) 90% );
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+    font-size: 40px;
+}
+.container1{
+    margin-top: 20px;
+}
+
+.sponser{
+    background-color: #C850C0;
+}
+
+.cardheader-m{
+    background-color: black;
+    color: white;
+    font-size: 30px;
+}
+.cardtitle-m{
+    background-color: white;
+ text-shadow: #e91c1cc0 -1px 2px;
+   
+}
+.cardtitle-m::after{
+    content: "";
+    position: absolute;
+    height: 19.5%;
+    width:10%;
+    background: rgba(17, 112, 255, 0.7);
+    left: 0;
+    border-left: 2px solid#020202;
+    animation: typing 4s steps(10) infinite;
+}
+
+.COPYRIGHT-M{
+    background-color: #000000;
+    color:rgb(255, 255, 255);
+}
+.register-m{
+    width: 30%;
+    margin: 20px auto;
+}
+.success-m{
+    display: block;
+ margin: 10px auto;
+
+}
+.containt-regester{
+   border-top: 2px solid #870000;
+}
+.floating-m{
+    margin: 20px 25px;
+    border: 2px solid #99fcff;
+}
+.textarea2-m{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-shadow: -2px 1px #99fcff;
+}
+/* mediaquery */
+
+
+@keyframes typing{
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .munu-m{
+      margin: 0px auto;
+    }
+    .cardtitle-m::after{
+        height: 19.5%;
+    }
+  }

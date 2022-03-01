@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    background-color: rgb(65, 107, 223);
+    display: flex;
+    height: 85px;
+  justify-content: space-around;
+  cursor: pointer;
+  width: 100%;
+   
+}
+.search input{
+width: 500px;
+padding-left: 10px;
+border-radius: 7px;
+
+}
+.navtext ul{
+    display: flex;
+    list-style-type: none;
+    color: white;
+   
+}
+.navtext li:hover{
+    color: #03192e;
+}
+.navtext li{
+  padding-left: 15px;
+  padding-top: 15px;
+}
+/* navbar2 */
+.navbar2{
+    background-color: rgb(42, 78, 179);
+    display: flex;
+    height: 30px;
+    cursor: pointer;
+}
+.navbar2 p{
+    text-decoration: underline;
+padding-left: 20px;
+align-items: center;
+color: white;
+}
+.navbar2 p:hover{
+    color: #03192e;
+}
+/* blackunlimated */
+.blackunlimated-img{
+    margin: 30px;
+    margin-top: 18px;
+}
+.imgtext{
+    position: absolute;
+    color: white;
+    margin: 20px;
+    font-size: 24px;
+    line-height: 100%;
+}
+
+.girl-img{
+margin-top: px;
+margin-left: -10px;
+
+}
+/* leadies-inspire */
+.leadies-inspire{
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 25px;
+}
+.inspire{
+  display: flex;
+
+ 
+}
+.inspireimg1{
+    width: 48%;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+.inspireimg2{
+    width: 48%;
+    box-shadow: 10px 10px 8px 10px #888888;
+    margin-left: 50px;
+    
+}
+.inspireimg1 img{
+    width: 100%;
+}
+
+.inspireimg2 img{
+    width: 100%;
+    
+}
+.bodytext1{
+    margin-left: 5px;
+}
+button{
+    border-radius: 12px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+    color: black;
+    background-color: white;
+    padding: 5px;
+    cursor: pointer;
+   
+}
+button:hover{
+    background-color: black;
+    color: white;
+}
+/* <!-- madam by madam c.j --> */
+.card-m{
+    margin: 30px;
+    margin-top: 18px;
+}
+/* moretolove */
+.moretolove{
+    display: flex;
+    justify-content: center;
+}
+.moretolovetext{
+    margin: 40px;
+    display: flex;
+    font-size: 20px;
+}
+.lovetext{
+    display: flex;
+    justify-content: space-between;
+}
+.lovetext a{
+margin-right: 30px;
+color: black;
+}
+.lovetext a:hover{
+    text-decoration: none;
+}
+/* 3img */
+.img-3{
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+}
+.imgtext-2{
+    
+    position: absolute;
+    line-height: 150%;
+    /* top: 3900px; */
+    margin-top: -380px;
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 425px;
+}
+/* babylotion */
+.box{
+    margin: 30px;
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.box1{
+    display: flex;
+width: 100%;
+
+}
+.imgtext-4{
+   margin-left: -80px;
+   
+}
+.img-last{
+    display: flex;
+    width: 100%;
+    margin-right: -88px;
+}
+.img-last-text{
+    text-align: center;
+    background-color: #e6f1fc;
+    
+}
+
+/* footer */
+.footer-box{
+    display: flex;
+    background-color: #004f9a;
+    height: 230px;
+    justify-content: center;
+    width: 100%;
+    padding: 10px;
+}
+#footer-box1{
+    
+   display: flex;
+   margin: 0px auto;
+   align-items: center;
+   color: white;
+   margin-top: -70px;
+  
+}
+#footer-box1 ul{
+   display: flex;
+   list-style-type: none;
+
+}
+#footer-box1 ul li{
+    padding: 10px;
+}
+#footer-box2{
+    display: flex;
+  position: absolute;
+  margin-top: -55px;
+  }
+#footer-box2 ul{
+    display: flex;
+    list-style-type: none;
+  margin-top: 130px;
+
+  }
+#footer-box2 ul li{
+    padding: 20px;
+color: white;
+  }
+#footer-box3{
+    display: flex;
+  position: absolute;
+  margin-top: -20px;
+  }
+#footer-box3 ul{
+    display: flex;
+    list-style-type: none;
+  margin-top: 130px;
+
+  }
+#footer-box3 ul li{
+    padding: 20px;
+color: white;
+  }
+#footer-box4{
+    display: flex;
+  position: absolute;
+  margin-top: -px;
+  }
+#footer-box4 ul{
+    display: flex;
+    list-style-type: none;
+  margin-top: 160px;
+ 
+
+  }
+#footer-box4 ul li{
+    padding: 20px;
+color: white;
+font-size: 12px;
+  }
+
+
+
+  /* media query */
+  
+  @media screen and (max-width: 800px){
+
+
+/* .buttosmedia{
+    padding: 2px;
+    font-size: 5px;
+    border-radius: 5px;
+} */
+    .navbar2 p{
+        font-size: 10px;
+        align-items: center;
+        margin-top: 7px;
+    }
+    
+    .navtext li{
+        font-size: 10px;
+        padding-top: 0px;
+        padding-left: 5px;
+        margin-top: -20px;
+        margin-right: 30px;
+        
+        
+    }
+
+
+
+.h2media{
+    font-size: 15px;
+    display: none;
+}
+.pmedia{
+    display: none;
+}
+
+
+
+
+    .search input{
+visibility: hidden;
+    }
+
+img{
+    width: 100%;
+}
+
+.imgtext-4{
+    /* display: none; */
+    margin-left: 0px;
+   
+}
+.imgtext-2{
+    /* display: none; */
+    position: absolute;
+    line-height: 200%;
+    /* top: 3900px; */
+    margin-top: -145px;
+    width: 40%;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 135px;
+   
+}
+
+.imgtext{
+display: none;
+}
+
+#footer-box1{
+    display: none;
+}
+#footer-box2{
+    display: none;
+    
+}
+#footer-box3{
+   margin-top: 0px;
+   align-items: center;
+  }
+
+  #footer-box3 ul{
+    display: flex;
+    list-style-type: none;
+  margin-top: 0px;
+}
+#footer-box4{
+   margin-top: 0px;
+   align-items: center;
+  }
+
+  #footer-box4 ul{
+    display: flex;
+    list-style-type: none;
+  margin-top: 35px;
+}
+
+
+
+
+
+  .footer-box{
+      height: 100px;
+  }
+
+
+.img-last{
+    /* display: none; */
+    width: 100%;
+    margin-right: 0px;
+   
+   
+}
+.box1{
+    display: flex;
+width: 100%;
+}
+
+  }
+  @media screen and (max-width: 450px){
+
+    
+    .imgtext-2{
+        /* display: none; */
+        position: absolute;
+        line-height: 100%;
+        /* top: 3900px; */
+        margin-top: -100px;
+        width: 40%;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: 92px;
+       
+    }
+
+    .psmedia{
+font-size: 11px;
+    }
+
+  }
+  @media screen and (max-width: 400px){
+
+    
+    .imgtext-2{
+        /* display: none; */
+        position: absolute;
+        line-height: 100%;
+        /* top: 3900px; */
+        margin-top: -90px;
+        width: 40%;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        vertical-align: middle;
+        margin-left: 80px;
+       
+    }
+
+    .psmedia{
+font-size: 11px;
+    }
+    .footer-box{
+        /* display: none; */
+    }
+  }
