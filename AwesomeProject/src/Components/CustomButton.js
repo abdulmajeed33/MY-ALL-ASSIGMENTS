@@ -13,11 +13,11 @@ const MashButton = (props) => {
             // hitSlop={{ top: 50, bottom: 10, right: 10, left: 10 }}
             android_ripple={{ color: '#FFF' }}
             style={({ pressed }) => [
-                { backgroundColor: pressed ? 'gray' : props.color },
-                styles.button,
+                { backgroundColor: pressed ? 'rgba(37, 42, 49, 0.05)' : props.color },
+                { ...props.style },
             ]}
         >
-            <Text style={styles.text}>
+            <Text style={{ ...props.text }}>
                 {props.title}
             </Text>
         </Pressable>
@@ -25,18 +25,18 @@ const MashButton = (props) => {
 };
 
 const styles = StyleSheet.create({
-    text: {
-        color: '#252A31',
-        fontSize: 20,
-        margin: 10,
-        textAlign: 'center',
-    },
-    button: {
-        width: 264,
-        height: 48,
-        alignItems: 'center',
-        borderRadius: 40,
-    },
+    // text: {
+    //     color: '#252A31',
+    //     fontSize: 20,
+    //     margin: 10,
+    //     textAlign: 'center',
+    // },
+    // button: {
+    //     width: 264,
+    //     height: 48,
+    //     alignItems: 'center',
+    //     borderRadius: 40,
+    // },
 });
 
 export default MashButton;

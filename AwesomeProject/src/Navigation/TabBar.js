@@ -3,6 +3,8 @@
 import React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { deviceWidth } from '../Components/dimenstion';
+
 
 import ScreenB from '../screen/screenB';
 import ScreenA from '../screen/screenA';
@@ -13,53 +15,65 @@ const TabBar = () => {
 
         <Tab.Navigator
             screenOptions={{
-                showLable: false,
                 headerShown: false,
+                tabBarLabelStyle: { bottom: 5, fontSize: 12 },
                 tabBarStyle: {
                     position: 'absolute',
-                    bottom: 4,
-                    right: 0,
-                    backgroundColor: '#fff',
-                    borderRadius: 15,
-                    height: 60,
+                    backgroundColor: '#FFF7E7',
+                    height: 64,
+                    width: deviceWidth,
                 },
-
             }}
         >
-            <Tab.Screen name="screenA" component={ScreenA}
+            <Tab.Screen name="purePrivicy" component={ScreenA}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <View style={{ alignItems: 'center', justifyContent: 'center', top: 10 }}>
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                             <Image
-                                source={require('../../assets/icons8-home-page-50.png')}
-                                resizeMode="contain"
-                                style={{
-                                    width: 25,
-                                    height: 25,
-                                    tintColor: focused ? '#e32f45' : '#748c94',
-                                }}
-                            />
-                        </View>
-                    ),
-                }}
-            />
-            <Tab.Screen name="screenB" component={ScreenB}
-                options={{
-                    tabBarIcon: ({ focused }) => (
-                        <View style={{ alignItems: 'center', justifyContent: 'center', top: 10 }}>
-                            <Image
-                                source={require('../../assets/icons8-home-page-50.png')}
+                                source={require('../../assets/TabNavigation/Privicy.png')}
                                 resizeMode="contain"
                                 style={{
                                     width: 30,
-                                    tintColor: focused ? '#e32f45' : '#748c94',
+                                    // tintColor: focused ? '#0A61FF' : '#748c94',
                                 }}
                             />
                         </View>
                     ),
                 }}
             />
-        </Tab.Navigator>
+            <Tab.Screen name="Data Removal" component={ScreenB}
+                options={{
+                    tabBarIcon: ({ focused }) => (
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                            <Image
+                                source={require('../../assets/TabNavigation/Data.png')}
+                                resizeMode="contain"
+                                style={{
+                                    width: 30,
+                                    // tintColor: focused ? '#0A61FF' : '#748c94',
+                                }}
+                            />
+                        </View>
+                    ),
+                }}
+            />
+            <Tab.Screen name="Activity Feed" component={ScreenB}
+                options={{
+                    tabBarIcon: ({ focused }) => (
+                        <View style={{ alignItems: 'center', justifyContent: 'center' }}>
+                            <Image
+                                source={require('../../assets/TabNavigation/Activity.png')}
+                                resizeMode="contain"
+                                style={{
+                                    width: 30,
+                                    // tintColor: focused ? '#0A61FF' : '#748c94',
+                                }}
+                            />
+                        </View>
+                    ),
+                }}
+            />
+        </Tab.Navigator >
     );
 };
 

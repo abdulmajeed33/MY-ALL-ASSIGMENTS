@@ -17,7 +17,7 @@ const HomeScreen = ({ navigation }) => {
         <>
             <View style={styles.body}>
                 <View style={{ top: 26, flex: 1 }}>
-                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignContent: 'center' }}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
                         <Text style={{
                             color: 'black',
                             fontSize: 16,
@@ -83,7 +83,19 @@ const HomeScreen = ({ navigation }) => {
                             fontFamily: 'SF Pro Display',
                             textAlign: 'center',
                         }}>
-                            <MashButton title={'Continue'} color={'rgba(255, 186, 36, 1)'} onPressFunction={onPressHandler} />
+                            <MashButton title={'Continue'} color={'rgba(255, 186, 36, 1)'}
+                                style={{
+                                    width: 264,
+                                    height: 48,
+                                    alignItems: 'center',
+                                    borderRadius: 40,
+                                }} onPressFunction={onPressHandler} text={{
+                                    color: '#252A31',
+                                    fontSize: 20,
+                                    margin: 10,
+                                    textAlign: 'center',
+                                }} />
+
                         </Text>
                         <Text style={{
                             top: 105,
