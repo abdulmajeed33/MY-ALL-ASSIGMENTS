@@ -3,7 +3,7 @@
 import React from 'react';
 import { View, Text, SafeAreaView, ImageBackground, Image, StyleSheet } from 'react-native';
 import MashButton from '../Components/CustomButton';
-import { deviceWidth } from '../Components/dimenstion';
+import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import { FlatList } from 'react-native';
 import { Sevices } from '../const/Services';
 import ServicesList from '../Components/Services_list';
@@ -11,12 +11,11 @@ import ServicesList from '../Components/Services_list';
 
 function ScreenA() {
     return (
-        <SafeAreaView>
-            <View style={styles.body}>
+        <SafeAreaView style={{ backgroundColor: '#FFFFF0', height: deviceHeight }}>
+            <View>
                 <Image
                     style={{ width: deviceWidth, height: 294, backgroundColor: '#C4C4C4' }}
                     source={require('../../assets/PurePrivicy/Pattern.png')}
-
                 />
                 <View style={{
                     flexDirection: 'row',
@@ -83,6 +82,13 @@ function ScreenA() {
                 </View>
             </View>
             <View>
+                <Text style={{
+                    top: 10,
+                    left: 20,
+                    fontSize: 18,
+                    fontWeight: 'bold',
+                    color: '#252A31',
+                }}>My Services </Text>
                 <FlatList
                     data={Sevices}
                     renderItem={({ item }) => <ServicesList item={item} />}

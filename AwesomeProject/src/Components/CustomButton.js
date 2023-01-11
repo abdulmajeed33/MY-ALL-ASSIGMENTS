@@ -10,7 +10,7 @@ const MashButton = (props) => {
     return (
         <Pressable
             onPress={props.onPressFunction}
-            // hitSlop={{ top: 50, bottom: 10, right: 10, left: 10 }}
+            hitSlop={{ top: 50, bottom: 10, right: 10, left: 10 }}
             android_ripple={{ color: '#FFF' }}
             style={({ pressed }) => [
                 { backgroundColor: pressed ? 'rgba(37, 42, 49, 0.05)' : props.color },
