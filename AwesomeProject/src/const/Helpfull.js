@@ -4,13 +4,13 @@ const Helpfull = {
     faq: [{
         key: 1,
         Description1: 'How do we calculate a data broker’s risk score?',
-        arrow: require('../../assets/PurePrivicy/arrow.png'),
+        arrow: require('../../assets/DataRemoval/arrow.png'),
         messeage: 'open',
     },
     {
         key: 2,
         Description1: 'What should I do if I get an email from a data broker?',
-        arrow: require('../../assets/PurePrivicy/arrow.png'),
+        arrow: require('../../assets/DataRemoval/arrow.png'),
         messeage: 'open',
     },
 
