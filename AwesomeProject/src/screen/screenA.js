@@ -1,11 +1,13 @@
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { View, Text, SafeAreaView, ImageBackground, Image, StyleSheet } from 'react-native';
+import { View, Text, SafeAreaView, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import MashButton from '../Components/CustomButton';
 import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import { FlatList } from 'react-native';
 import { Sevices } from '../const/Services';
+import { Toast } from 'react-native-toast-message/lib/src/Toast';
+import showToast from '../const/showToast';
 import ServicesList from '../Components/Services_list';
 
 
@@ -15,7 +17,7 @@ function ScreenA() {
             <View>
                 <Image
                     style={{ width: deviceWidth, height: 294, backgroundColor: '#C4C4C4' }}
-                    source={require('../../assets/PurePrivicy/Pattern.png')}
+                    source={require('../assets/PurePrivicy/Pattern.png')}
                 />
                 <View style={{
                     flexDirection: 'row',
@@ -26,14 +28,19 @@ function ScreenA() {
                     alignItems: 'center',
 
                 }}>
+
                     <Text style={{ textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>Pure</Text>
                     <Text style={{ textAlign: 'center', fontSize: 16 }}>privicy</Text>
-                    <Image style={{
-                        left: 112,
-                    }}
-                        source={require('../../assets/PurePrivicy/menu.png')}
-                    />
+                    <TouchableOpacity onPress={showToast}>
+                        <Image style={{
+                            left: 112,
+                        }}
+                            source={require('../assets/PurePrivicy/menu.png')}
+                        />
+                    </TouchableOpacity>
+
                 </View>
+
                 <View style={{
                     width: 300,
                     flex: 1,
@@ -43,7 +50,7 @@ function ScreenA() {
                     alignItems: 'center',
                     alignSelf: 'center',
                 }}>
-                    <Image source={require('../../assets/PurePrivicy/Icon.png')} />
+                    <Image source={require('../assets/PurePrivicy/Icon.png')} />
                     <Text style={{
                         lineHeight: 35,
                         fontSize: 16,
@@ -94,6 +101,7 @@ function ScreenA() {
                     renderItem={({ item }) => <ServicesList item={item} />}
                 />
             </View>
+            <Toast />
         </SafeAreaView >
     );
 }

@@ -3,27 +3,23 @@
 /* eslint-disable react-native/no-inline-styles */
 
 import React from 'react';
-import { View, Text, StyleSheet, Pressable, ToastAndroid, TouchableOpacity } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import MashButton from '../Components/CustomButton';
 import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import { Image } from 'react-native';
 import Slides from '../Components/Slides';
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
+import showToast from '../const/showToast';
+
+
 
 const HomeScreen = ({ navigation }) => {
     const onPressHandler = () => {
         navigation.navigate('ScreenA');
     };
 
-    const showToast = () => {
-        Toast.show({
-            type: 'success',
-            text1: 'Hello',
-            text2: 'This is some something 👋',
-        });
-    };
-    return (
 
+    return (
         <View style={styles.body}>
             <View style={{ top: 26, flex: 0.1 }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'center', alignItems: 'center' }}>
@@ -35,7 +31,7 @@ const HomeScreen = ({ navigation }) => {
                     </Text>
                     <View style={{ left: 100, justifyContent: 'flex-end' }}>
                         <TouchableOpacity onPress={() => onPressHandler()}>
-                            <Image source={require('../../assets/HomePage/Cross.png')} />
+                            <Image source={require('../assets/HomePage/Cross.png')} />
                         </TouchableOpacity>
                     </View>
                 </View>
@@ -43,6 +39,7 @@ const HomeScreen = ({ navigation }) => {
 
             <Slides />
 
+            <Toast />
             <Text style={{
                 bottom: 90,
                 fontSize: 16,
@@ -64,6 +61,8 @@ const HomeScreen = ({ navigation }) => {
                     }} />
             </Text>
             <TouchableOpacity onPress={showToast}>
+
+
                 <Text style={{
                     bottom: 50,
                     fontSize: 16,

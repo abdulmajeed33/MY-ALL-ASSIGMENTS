@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React from 'react';
@@ -23,7 +24,7 @@ function ScreenB() {
                     <Image style={{
                         left: 112,
                     }}
-                        source={require('../../assets/PurePrivicy/menu.png')}
+                        source={require('../assets/PurePrivicy/menu.png')}
                     />
                 </View>
                 <View style={{
@@ -31,7 +32,7 @@ function ScreenB() {
                     alignItems: 'center',
                     top: 70,
                 }}>
-                    <Image source={require('../../assets/DataRemoval/ProgressArch.png')} />
+                    <Image source={require('../assets/DataRemoval/ProgressArch.png')} />
                     <MashButton title={'View Removal Requests'} style={{
                         top: 20,
                         width: 264,

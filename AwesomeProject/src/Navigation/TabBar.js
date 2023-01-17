@@ -30,7 +30,7 @@ const TabBar = () => {
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                             <Image
-                                source={require('../../assets/TabNavigation/Privicy.png')}
+                                source={require('../assets/TabNavigation/Privicy.png')}
                                 resizeMode="contain"
                                 style={{
                                     width: 30,
@@ -46,7 +46,7 @@ const TabBar = () => {
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                             <Image
-                                source={require('../../assets/TabNavigation/Data.png')}
+                                source={require('../assets/TabNavigation/Data.png')}
                                 resizeMode="contain"
                                 style={{
                                     width: 30,
@@ -62,7 +62,7 @@ const TabBar = () => {
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
                             <Image
-                                source={require('../../assets/TabNavigation/Activity.png')}
+                                source={require('../assets/TabNavigation/Activity.png')}
                                 resizeMode="contain"
                                 style={{
                                     width: 30,
