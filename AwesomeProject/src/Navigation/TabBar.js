@@ -6,13 +6,12 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { deviceWidth } from '../Components/dimenstion';
 
 
-import ScreenB from '../screen/screenB';
-import ScreenA from '../screen/screenA';
+import DataRemoval from '../screen/DataRemoval';
+import PurePrivicy from '../screen/PurePrivicy';
 const Tab = createBottomTabNavigator();
 
 const TabBar = () => {
     return (
-
         <Tab.Navigator
             screenOptions={{
                 headerShown: false,
@@ -25,7 +24,7 @@ const TabBar = () => {
                 },
             }}
         >
-            <Tab.Screen name="purePrivicy" component={ScreenA}
+            <Tab.Screen name="PurePrivicy" component={PurePrivicy}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -41,7 +40,7 @@ const TabBar = () => {
                     ),
                 }}
             />
-            <Tab.Screen name="Data Removal" component={ScreenB}
+            <Tab.Screen name="Data Removal" component={DataRemoval}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -57,7 +56,7 @@ const TabBar = () => {
                     ),
                 }}
             />
-            <Tab.Screen name="Activity Feed" component={ScreenB}
+            <Tab.Screen name="Activity Feed" component={DataRemoval}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>

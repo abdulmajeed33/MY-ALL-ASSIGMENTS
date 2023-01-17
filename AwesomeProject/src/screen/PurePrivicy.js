@@ -11,7 +11,7 @@ import showToast from '../const/showToast';
 import ServicesList from '../Components/Services_list';
 
 
-function ScreenA() {
+function PurePrivicy() {
     return (
         <SafeAreaView style={{ backgroundColor: '#FFFFF0', height: deviceHeight }}>
             <View>
@@ -106,7 +106,7 @@ function ScreenA() {
     );
 }
 
-export default ScreenA;
+export default PurePrivicy;
 const styles = StyleSheet.create({
     body: {
 

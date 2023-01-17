@@ -9,7 +9,11 @@ import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import HelpfullTips from '../Components/HelpfullTips';
 import Helpfull from '../const/Helpfull';
 import ItemDivider from '../Components/itemDevider';
-function ScreenB() {
+
+
+
+
+function DataRemoval() {
     return (
         <SafeAreaView style={{ height: deviceHeight, backgroundColor: 'rgba(255, 255, 240, 1)', paddingBottom: 82 }}>
             <View style={{ display: 'flex', flex: 1 }}>
@@ -73,7 +77,7 @@ function ScreenB() {
     );
 }
 
-export default ScreenB;
+export default DataRemoval;
 
 const style = StyleSheet.create({
     cartCard: {

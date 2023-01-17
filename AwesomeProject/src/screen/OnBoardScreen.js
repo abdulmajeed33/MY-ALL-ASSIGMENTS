@@ -13,9 +13,9 @@ import showToast from '../const/showToast';
 
 
 
-const HomeScreen = ({ navigation }) => {
+const OnBoardScreen = ({ navigation }) => {
     const onPressHandler = () => {
-        navigation.navigate('ScreenA');
+        navigation.navigate('PurePrivicy');
     };
 
 
@@ -37,9 +37,10 @@ const HomeScreen = ({ navigation }) => {
                 </View>
             </View>
 
+            {/* Commponent */}
             <Slides />
-
             <Toast />
+
             <Text style={{
                 bottom: 90,
                 fontSize: 16,
@@ -79,9 +80,7 @@ const HomeScreen = ({ navigation }) => {
     );
 };
 
-export default HomeScreen;
-
-
+export default OnBoardScreen;
 
 
 const styles = StyleSheet.create({
@@ -99,6 +98,7 @@ const styles = StyleSheet.create({
     },
 
 });
+
 
 
 

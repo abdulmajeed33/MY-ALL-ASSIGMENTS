@@ -77,9 +77,9 @@ const Slides = () => {
                     width: 10,
                     bottom: 70,
                 }}
-                onDone={() => {
-                    setShowHomePage(true);
-                }}
+            // onDone={() => {
+            //     setShowHomePage(true);
+            // }}
             />
         );
     }
