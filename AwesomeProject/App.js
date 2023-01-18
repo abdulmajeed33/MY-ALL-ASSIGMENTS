@@ -11,16 +11,14 @@ const Stack = createNativeStackNavigator();
 const App = () => {
   return (
     <>
-      <NavigationContainer>
-        <Stack.Navigator screenOptions={{ headerShown: false }} >
+      <NavigationContainer >
+        <Stack.Navigator initialRouteName="onBoardScreen" screenOptions={{ headerShown: false }} >
           <Stack.Screen name="onBoardScreen" component={OnBoardScreen} />
-          <Stack.Screen name="PurePrivicy" component={TabBar} />
+          <Stack.Screen name="Pure_Privicy" component={TabBar} />
         </Stack.Navigator>
       </NavigationContainer>
     </>
   );
 };
-
-
 
 export default App;

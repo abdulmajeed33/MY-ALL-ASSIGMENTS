@@ -5,7 +5,7 @@
 
 
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { AnimatedCircularProgress } from 'react-native-circular-progress';
 
 const ProgressBar = () => {
@@ -23,13 +23,14 @@ const ProgressBar = () => {
                 children={'38 of 150'}
                 style={{ top: 5 }}
             >
-                {fill => <><Text style={{
-                    textAlign: 'center',
-                    color: '#7591af',
-                    fontSize: 12,
-                    fontWeight: '100',
-                }}>
-                    {Math.round((150 * fill) / 100)} of 150</Text>
+                {fill => <>
+                    <Text style={{
+                        textAlign: 'center',
+                        color: '#7591af',
+                        fontSize: 12,
+                        fontWeight: '100',
+                    }}>
+                        {Math.round((150 * fill) / 100)} of 150</Text>
                     <Text> Requests Completed</Text>
                 </>
                 }
@@ -40,3 +41,14 @@ const ProgressBar = () => {
 };
 
 export default ProgressBar;
+
+
+
+const styles = StyleSheet.create({
+    body: {
+        top: 10,
+        height: 1,
+        width: '100%',
+        backgroundColor: "grey",
+    }
+})

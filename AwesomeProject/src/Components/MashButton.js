@@ -24,19 +24,5 @@ const MashButton = (props) => {
     );
 };
 
-const styles = StyleSheet.create({
-    // text: {
-    //     color: '#252A31',
-    //     fontSize: 20,
-    //     margin: 10,
-    //     textAlign: 'center',
-    // },
-    // button: {
-    //     width: 264,
-    //     height: 48,
-    //     alignItems: 'center',
-    //     borderRadius: 40,
-    // },
-});
 
 export default MashButton;

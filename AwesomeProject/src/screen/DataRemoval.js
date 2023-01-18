@@ -4,7 +4,7 @@
 import React from 'react';
 import { View, Text, Image, FlatList, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
-import MashButton from '../Components/CustomButton';
+import MashButton from '../Components/MashButton';
 import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import HelpfullTips from '../Components/HelpfullTips';
 import Helpfull from '../const/Helpfull';
@@ -17,7 +17,7 @@ import ProgressBar from '../Components/ProgressBar';
 
 function DataRemoval() {
     return (
-        <SafeAreaView style={{ height: deviceHeight, backgroundColor: 'rgba(255, 255, 240, 1)', paddingBottom: 82 }}>
+        <SafeAreaView style={styles.body}>
             <View style={{ display: 'flex', flex: 1 }}>
                 <View style={styles.header}>
                     <Text style={styles.headerText}>Data Removal</Text>
@@ -35,23 +35,9 @@ function DataRemoval() {
                 </View>
             </View>
             <View style={{ display: 'flex', flex: 1 }}>
-                <Text style={{
-                    top: -20,
-                    left: 20,
-                    fontSize: 16,
-                    fontWeight: 'bold',
-                    color: '#4F5E71',
-                }}>Helpful tips</Text>
+                <Text style={styles.heading}>Helpful tips</Text>
                 <View style={styles.cartCard}>
-                    <Text style={{
-                        fontWeight: 'bold',
-                        fontSize: 18,
-                        color: 'rgba(37, 42, 49, 1)',
-                        left: 5,
-                        top: 18,
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                    }}>{Helpfull.Heading}</Text>
+                    <Text style={styles.cartHeading}>{Helpfull.Heading}</Text>
                     <FlatList
                         data={Helpfull.faq}
                         renderItem={({ item }) => <HelpfullTips item={item} />}
@@ -65,7 +51,14 @@ function DataRemoval() {
 
 export default DataRemoval;
 
+
+
 const styles = StyleSheet.create({
+    body: {
+        height: deviceHeight,
+        backgroundColor: 'rgba(255, 255, 240, 1)',
+        paddingBottom: 82,
+    },
     header: {
         flexDirection: 'row',
         position: 'absolute',
@@ -77,7 +70,7 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 16,
         fontWeight: 'bold',
-        color: 'rgba(37, 42, 49, 1)'
+        color: 'rgba(37, 42, 49, 1)',
     },
 
     button: {
@@ -96,7 +89,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         color: 'rgba(37, 42, 49, 1)',
-        fontSize: 14
+        fontSize: 14,
     },
     cartCard: {
         height: 300,
@@ -109,6 +102,22 @@ const styles = StyleSheet.create({
         paddingHorizontal: 15,
         borderWidth: 1,
         borderColor: ' #848E9C',
+    },
+    heading: {
+        top: -20,
+        left: 20,
+        fontSize: 16,
+        fontWeight: 'bold',
+        color: '#4F5E71',
+    },
+    cartHeading: {
+        fontWeight: 'bold',
+        fontSize: 18,
+        color: 'rgba(37, 42, 49, 1)',
+        left: 5,
+        top: 18,
+        alignItems: 'center',
+        justifyContent: 'center',
     },
 
 })

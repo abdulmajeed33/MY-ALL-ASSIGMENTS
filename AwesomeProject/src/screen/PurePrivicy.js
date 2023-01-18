@@ -2,7 +2,7 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import { View, Text, SafeAreaView, Image, StyleSheet, TouchableOpacity } from 'react-native';
-import MashButton from '../Components/CustomButton';
+import MashButton from '../Components/MashButton';
 import { deviceWidth, deviceHeight } from '../Components/dimenstion';
 import { FlatList } from 'react-native';
 import { Sevices } from '../const/Services';
@@ -19,15 +19,7 @@ function Pure_Privicy() {
                     style={{ width: deviceWidth, height: (deviceHeight / 2), backgroundColor: '#C4C4C4' }}
                     source={require('../assets/PurePrivicy/Pattern.png')}
                 />
-                <View style={{
-                    flexDirection: 'row',
-                    position: 'absolute',
-                    width: deviceWidth,
-                    top: 20,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-
-                }}>
+                <View style={styles.header}>
 
                     <Text style={{ textAlign: 'center', fontSize: 16, fontWeight: 'bold' }}>Pure</Text>
                     <Text style={{ textAlign: 'center', fontSize: 16 }}>privicy</Text>
@@ -41,49 +33,22 @@ function Pure_Privicy() {
 
                 </View>
 
-                <View style={{
-                    width: 300,
-                    flex: 1,
-                    position: 'absolute',
-                    top: 60,
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    alignSelf: 'center',
-                }}>
+                <View style={styles.body}>
                     <Image source={require('../assets/PurePrivicy/Icon.png')} />
                     <Text style={{
-                        lineHeight: 35,
-                        fontSize: 16,
-                        fontWeight: 'bold',
-                    }}>Introducing your new Data Removal tool</Text>
+                        lineHeight: 35, fontSize: 16, fontWeight: 'bold',
+                    }}>
+                        Introducing your new Data Removal tool</Text>
                     <Text style={{
-                        textAlign: 'center',
-                        fontSize: 16,
-                        lineHeight: 20,
+                        textAlign: 'center', fontSize: 16, lineHeight: 20,
                     }}>
                         Data Brokers sell your data - like your address and phone number. We tell them to delete it for you.
                     </Text>
                     <View style={{ flexDirection: 'row' }}>
                         <MashButton title={'Skip for now'} color={'rgba(37, 42, 49, 0.05)'}
-                            style={{
-                                top: 20,
-                                width: 139,
-                                height: 40,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                borderRadius: 40,
-                                marginRight: 20,
-                            }} />
+                            style={styles.buttonbody1} />
                         <MashButton title={'Show me how'}
-                            style={{
-                                top: 20,
-                                width: 139,
-                                height: 40,
-                                alignItems: 'center',
-                                justifyContent: 'center',
-                                borderRadius: 40,
-                                borderWidth: 1,
-                            }}
+                            style={styles.buttonbody2}
                         />
                     </View>
                 </View>
@@ -110,7 +75,42 @@ export default Pure_Privicy;
 
 
 const styles = StyleSheet.create({
+    header: {
+        flexDirection: 'row',
+        position: 'absolute',
+        width: deviceWidth,
+        top: 20,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     body: {
+        width: 300,
+        flex: 1,
+        position: 'absolute',
+        top: 60,
+        justifyContent: 'center',
+        alignItems: 'center',
+        alignSelf: 'center',
+    },
+    buttonbody1: {
+        top: 20,
+        width: 139,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 40,
+        marginRight: 20,
+    },
+    buttonbody2: {
+
+        top: 20,
+        width: 139,
+        height: 40,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 40,
+        borderWidth: 1,
 
     },
+
 });

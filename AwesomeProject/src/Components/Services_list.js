@@ -2,8 +2,8 @@
 /* eslint-disable no-undef */
 /* eslint-disable prettier/prettier */
 import React from 'react';
-import { deviceWidth, deviceHeight } from '../Components/dimenstion';
-import { SafeAreaView, StyleSheet, View, Text, Image } from 'react-native';
+
+import { StyleSheet, View, Text, Image } from 'react-native';
 
 
 const ServicesList = ({ item }) => {
@@ -11,12 +11,7 @@ const ServicesList = ({ item }) => {
         <View style={style.serv_list}>
             <Image source={item.image} style={{ height: 55, width: 55 }} />
             <View
-                style={{
-                    height: 100,
-                    marginLeft: 10,
-                    paddingTop: 16,
-                    flex: 1,
-                }}>
+                style={style.body}>
                 <Text style={{ fontWeight: 'bold', fontSize: 16 }}>{item.title}</Text>
                 <Text style={{ fontSize: 13, color: 'grey' }}>
                     {item.text}
@@ -37,6 +32,12 @@ const style = StyleSheet.create({
         flexDirection: 'row',
         alignItems: 'center',
     },
+    body: {
+        height: 100,
+        marginLeft: 10,
+        paddingTop: 16,
+        flex: 1,
+    }
 });
 
 export default ServicesList;

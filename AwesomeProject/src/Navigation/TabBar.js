@@ -23,6 +23,7 @@ const TabBar = () => {
                     height: 64,
                     width: deviceWidth,
                 },
+
             }}
         >
             <Tab.Screen name="PurePrivicy" component={Pure_Privicy}
