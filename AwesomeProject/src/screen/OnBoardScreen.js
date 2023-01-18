@@ -41,12 +41,12 @@ const OnBoardScreen = ({ navigation }) => {
             <Slides />
             <Toast />
 
-            <Text style={{
+            <View style={{
                 bottom: 90,
                 fontSize: 16,
                 color: '#252A31',
                 fontFamily: 'SF Pro Display',
-                textAlign: 'center',
+                alignItems: 'center',
             }}>
                 <MashButton title={'Continue'} color={'rgba(255, 186, 36, 1)'}
                     style={{
@@ -60,7 +60,7 @@ const OnBoardScreen = ({ navigation }) => {
                         margin: 10,
                         textAlign: 'center',
                     }} />
-            </Text>
+            </View>
             <TouchableOpacity onPress={showToast}>
 
 

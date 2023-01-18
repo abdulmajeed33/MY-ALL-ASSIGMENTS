@@ -11,12 +11,12 @@ import showToast from '../const/showToast';
 import ServicesList from '../Components/Services_list';
 
 
-function PurePrivicy() {
+function Pure_Privicy() {
     return (
         <SafeAreaView style={{ backgroundColor: '#FFFFF0', height: deviceHeight }}>
             <View>
                 <Image
-                    style={{ width: deviceWidth, height: 294, backgroundColor: '#C4C4C4' }}
+                    style={{ width: deviceWidth, height: (deviceHeight / 2), backgroundColor: '#C4C4C4' }}
                     source={require('../assets/PurePrivicy/Pattern.png')}
                 />
                 <View style={{
@@ -106,7 +106,9 @@ function PurePrivicy() {
     );
 }
 
-export default PurePrivicy;
+export default Pure_Privicy;
+
+
 const styles = StyleSheet.create({
     body: {
 

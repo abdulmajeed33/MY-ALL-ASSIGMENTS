@@ -14,7 +14,7 @@ const ServicesList = ({ item }) => {
                 style={{
                     height: 100,
                     marginLeft: 10,
-                    paddingVertical: 20,
+                    paddingTop: 16,
                     flex: 1,
                 }}>
                 <Text style={{ fontWeight: 'bold', fontSize: 16 }}>{item.title}</Text>
@@ -25,7 +25,6 @@ const ServicesList = ({ item }) => {
             </View>
             <View>
                 <Image source={item.arrow} />
-
             </View>
         </View>
     );
@@ -33,13 +32,11 @@ const ServicesList = ({ item }) => {
 
 const style = StyleSheet.create({
     serv_list: {
-        marginVertical: 10,
         marginHorizontal: 8,
         paddingHorizontal: 12,
         flexDirection: 'row',
         alignItems: 'center',
     },
-
 });
 
 export default ServicesList;

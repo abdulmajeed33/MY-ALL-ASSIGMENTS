@@ -4,10 +4,11 @@ import React from 'react';
 import { StyleSheet, View, Image } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { deviceWidth } from '../Components/dimenstion';
-
+import ActivityFeed from '../screen/ActivityFeed';
 
 import DataRemoval from '../screen/DataRemoval';
-import PurePrivicy from '../screen/PurePrivicy';
+import Pure_Privicy from '../screen/PurePrivicy';
+
 const Tab = createBottomTabNavigator();
 
 const TabBar = () => {
@@ -24,7 +25,7 @@ const TabBar = () => {
                 },
             }}
         >
-            <Tab.Screen name="PurePrivicy" component={PurePrivicy}
+            <Tab.Screen name="PurePrivicy" component={Pure_Privicy}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>
@@ -56,7 +57,7 @@ const TabBar = () => {
                     ),
                 }}
             />
-            <Tab.Screen name="Activity Feed" component={DataRemoval}
+            <Tab.Screen name="Activity Feed" component={ActivityFeed}
                 options={{
                     tabBarIcon: ({ focused }) => (
                         <View style={{ alignItems: 'center', justifyContent: 'center' }}>

@@ -33,7 +33,7 @@ const Slides = () => {
                                 backgroundColor: '#rgba(255, 255, 240, 1)',
                             }}>
                                 <Text style={{
-                                    top: 5,
+                                    top: 10,
                                     fontSize: 20,
                                     color: '#252A31',
                                     fontFamily: 'SF Pro Display',
@@ -44,6 +44,7 @@ const Slides = () => {
                                     {item.title}
                                 </Text>
                                 <Text style={{
+                                    top: 5,
                                     fontSize: 18,
                                     color: '#252A31',
                                     fontFamily: 'SF Pro Display',
