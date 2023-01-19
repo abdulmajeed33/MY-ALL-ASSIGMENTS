@@ -1,7 +1,9 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable semi */
+/* eslint-disable prettier/prettier */
 
 import { Toast } from 'react-native-toast-message/lib/src/Toast';
-import { ImageBackground } from 'react-native';
+
 
 const showToast = async () => {
     Toast.show({
@@ -9,8 +11,8 @@ const showToast = async () => {
         text1: 'Toast Message',
         text2: 'Sorry! Future Development in progress',
         autoHide: true,
-        visibilityTime: 1000,
+        visibilityTime: 2000,
     });
 };
 
-export default showToast
+export default showToast;

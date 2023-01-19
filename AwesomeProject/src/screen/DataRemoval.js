@@ -13,8 +13,6 @@ import ProgressBar from '../Components/ProgressBar';
 
 
 
-
-
 function DataRemoval() {
     return (
         <SafeAreaView style={styles.body}>
@@ -27,8 +25,8 @@ function DataRemoval() {
                         source={require('../assets/PurePrivicy/menu.png')}
                     />
                 </View>
+                <ProgressBar />
                 <View style={styles.button}>
-                    <ProgressBar />
                     <MashButton title={'View Removal Requests'}
                         style={styles.buttonBody}
                         text={styles.buttonText} />
@@ -76,7 +74,7 @@ const styles = StyleSheet.create({
     button: {
         justifyContent: 'center',
         alignItems: 'center',
-        top: 70,
+        top: -16,
     },
     buttonBody: {
         top: 20,
@@ -93,7 +91,6 @@ const styles = StyleSheet.create({
     },
     cartCard: {
         height: 300,
-        top: -10,
         elevation: 15,
         borderRadius: 24,
         backgroundColor: 'white',
@@ -104,7 +101,7 @@ const styles = StyleSheet.create({
         borderColor: ' #848E9C',
     },
     heading: {
-        top: -20,
+        top: -10,
         left: 20,
         fontSize: 16,
         fontWeight: 'bold',

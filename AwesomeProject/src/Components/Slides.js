@@ -20,7 +20,7 @@ const Slides = () => {
                             <Image
                                 source={item.image}
                             />
-                            <View style={styles.heading}>
+                            <View style={styles.textBody}>
                                 <Text style={styles.title}>
                                     {item.title}
                                 </Text>
@@ -51,15 +51,15 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         backgroundColor: '#rgba(255, 255, 240, 1)',
     },
-    heading: {
+    textBody: {
         flex: 1,
         width: 296,
-        height: 24,
+        height: 148,
         backgroundColor: '#rgba(255, 255, 240, 1)',
     },
     title: {
         top: 10,
-        fontSize: 20,
+        fontSize: 16,
         color: '#252A31',
         fontFamily: 'SF Pro Display',
         textAlign: 'center',
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
     },
     description1: {
         top: 5,
-        fontSize: 18,
+        fontSize: 16,
         color: '#252A31',
         fontFamily: 'SF Pro Display',
         textAlign: 'center',

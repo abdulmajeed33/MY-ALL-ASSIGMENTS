@@ -1,4 +1,5 @@
 /* eslint-disable prettier/prettier */
+
 const Helpfull = {
     Heading: 'Some tips to help you with the most frequently asked questions about data brokers.',
     faq: [{

@@ -1,9 +1,10 @@
 /* eslint-disable prettier/prettier */
+/* eslint-disable eol-last */
+/* eslint-disable prettier/prettier */
 import React from 'react';
 import {
     Pressable,
     Text,
-    StyleSheet,
 } from 'react-native';
 
 const MashButton = (props) => {

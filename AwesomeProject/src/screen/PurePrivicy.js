@@ -1,3 +1,6 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable eol-last */
+/* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 /* eslint-disable prettier/prettier */
 import React from 'react';
@@ -44,11 +47,16 @@ function Pure_Privicy() {
                     }}>
                         Data Brokers sell your data - like your address and phone number. We tell them to delete it for you.
                     </Text>
-                    <View style={{ flexDirection: 'row' }}>
-                        <MashButton title={'Skip for now'} color={'rgba(37, 42, 49, 0.05)'}
-                            style={styles.buttonbody1} />
-                        <MashButton title={'Show me how'}
+                    <View style={{ flexDirection: 'row', top: 8 }}>
+                        <MashButton
+                            title={'Skip for now'} color={'rgba(37, 42, 49, 0.05)'}
+                            style={styles.buttonbody1}
+                            onPressFunction={showToast}
+                        />
+                        <MashButton
+                            title={'Show me how'}
                             style={styles.buttonbody2}
+                            onPressFunction={showToast}
                         />
                     </View>
                 </View>

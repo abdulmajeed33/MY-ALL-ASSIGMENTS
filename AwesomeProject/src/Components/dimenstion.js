@@ -1,5 +1,7 @@
 /* eslint-disable prettier/prettier */
-/* eslint-disable quotes */
+/* eslint-disable prettier/prettier */
+/* eslint-disable prettier/prettier */
+
 import { Dimensions } from 'react-native';
 
 export const deviceHeight = Dimensions.get('window').height;

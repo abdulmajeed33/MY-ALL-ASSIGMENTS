@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     },
     arrowImg: {
         marginRight: 20,
-        alignItems: "flex-end",
-        bottom: 20
+        alignItems: 'flex-end',
+        bottom: 20,
     }
 })
